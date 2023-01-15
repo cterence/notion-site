@@ -26,6 +26,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
+import { GitHubShareButton } from './GitHubShareButton'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -279,6 +280,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={footer}
       />
+      <GitHubShareButton />
     </>
   )
 }

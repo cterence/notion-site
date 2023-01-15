@@ -6,7 +6,7 @@ export default siteConfig({
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+  rootNotionSpaceId: '497f0d8f066c486ca47857cb1474ec7b',
 
   // basic site info (required)
   name: 'Térence Chateigné',
@@ -14,11 +14,13 @@ export default siteConfig({
   author: 'Térence Chateigné',
 
   // open graph metadata (optional)
-  description: 'Térence Chateigné\'s personal website',
+  description: 'Personal site of Térence Chateigné',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
+  email: 'terence.chateigne@posteo.net',
   github: 'cterence',
+  gitlab: 'terencech',
   linkedin: 'terencechateigne',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
@@ -42,9 +44,9 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  pageUrlOverrides: {
-    '/about': '3dbda30fe3934928a037dec1b0fc2fa5',
-  },
+  // pageUrlOverrides: {
+  //   '/about': '3dbda30fe3934928a037dec1b0fc2fa5',
+  // },
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.

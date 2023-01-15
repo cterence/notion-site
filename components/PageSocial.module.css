@@ -94,9 +94,16 @@
 }
 
 .github .actionBgPane {
-  background: #c9510c;
+  background: #7014c7;
 }
 .github:hover {
+  border-color: #7014c7;
+}
+
+.gitlab .actionBgPane {
+  background: #c9510c;
+}
+.gitlab:hover {
   border-color: #c9510c;
 }
 

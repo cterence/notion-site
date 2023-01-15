@@ -1,9 +1,11 @@
 import * as React from 'react'
 
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
+import { MdEmail } from '@react-icons/all-files/md/MdEmail'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
+import { FaGitlab } from '@react-icons/all-files/fa/FaGitlab'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
@@ -36,7 +38,7 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright {currentYear} {config.author}</div>
+      <div className={styles.copyright}>Copyright {new Date().getFullYear()} {config.author}</div>
 
       <div className={styles.settings}>
         {hasMounted && (
@@ -53,6 +55,18 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
+        {config.email && (
+          <a
+            className={styles.Email}
+            href={`mailto:${config.email}`}
+            title={`Email ${config.email}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <MdEmail />
+          </a>
+        )}
+
         {config.twitter && (
           <a
             className={styles.twitter}
@@ -97,6 +111,18 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaGithub />
+          </a>
+        )}
+
+        {config.gitlab && (
+          <a
+            className={styles.gitlab}
+            href={`https://gitlab.com/${config.gitlab}`}
+            title={`GitLab @${config.gitlab}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaGitlab />
           </a>
         )}
 
