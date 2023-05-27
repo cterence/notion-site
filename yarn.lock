@@ -833,6 +833,11 @@
   "resolved" "https://registry.npmjs.org/@use-it/event-listener/-/event-listener-0.1.7.tgz"
   "version" "0.1.7"
 
+"@vercel/analytics@^1.0.1":
+  "integrity" "sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow=="
+  "resolved" "https://registry.npmjs.org/@vercel/analytics/-/analytics-1.0.1.tgz"
+  "version" "1.0.1"
+
 "@vercel/build-utils@5.8.3":
   "integrity" "sha512-t9IdZjTh65NnYvVMQfGIVXaYSBkSxuBSJHdrwy8FbSD0WB0OiRLg3sXJpKIl36M5E7IRsx29qgiw3qXEhoObtg=="
   "resolved" "https://registry.npmjs.org/@vercel/build-utils/-/build-utils-5.8.3.tgz"
@@ -2662,7 +2667,7 @@ isomorphic-unfetch@^3.1.0:
   dependencies:
     "commander" "^8.0.0"
 
-"keyv@npm:@keyvhq/core@~1.6.6":
+"keyv@^4.0.0":
   "integrity" "sha512-NQtjFKsZXLYs3SWbeYATdwwJ1fZtzwrV+9YM4Y9JPGGQqLI0q6gyY2sEWI4RvrKBGJ1AXCJPQNXOPr8oAWdEDw=="
   "resolved" "https://registry.npmjs.org/@keyvhq/core/-/core-1.6.14.tgz"
   "version" "1.6.14"
