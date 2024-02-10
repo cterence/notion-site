@@ -237,6 +237,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
       config.defaultPageCover,
     block
   )
+  
+  const githubShareButtonEnabled = false
 
   const socialDescription =
     getPageProperty<string>('Description', block, recordMap) ||
@@ -280,8 +282,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={footer}
       />
-      {/* Remove github share button */}
-      {/* <GitHubShareButton /> */}
+      {githubShareButtonEnabled && <GitHubShareButton />}
     </>
   )
 }
