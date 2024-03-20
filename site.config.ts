@@ -20,7 +20,7 @@ export default siteConfig({
   // twitter: 'transitive_bs',
   email: 'terence.chateigne@posteo.net',
   github: 'cterence',
-  gitlab: 'terencech',
+  // gitlab: 'terencech',
   linkedin: 'terencechateigne',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
