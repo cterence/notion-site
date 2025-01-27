@@ -1,4 +1,4 @@
-import * as React from 'react'
+import type * as React from 'react'
 import { FaGitlab } from '@react-icons/all-files/fa/FaGitlab'
 import { MdEmail } from '@react-icons/all-files/md/MdEmail'
 
@@ -90,7 +90,7 @@ const socialLinks: SocialLink[] = [
   }
 ].filter(Boolean)
 
-export const PageSocial: React.FC = () => {
+export function PageSocial() {
   return (
     <div className={styles.pageSocial}>
       {socialLinks.map((action) => (
