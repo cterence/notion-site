@@ -1,11 +1,4 @@
 // global styles shared across the entire site
-import * as React from 'react'
-import type { AppProps } from 'next/app'
-import { useRouter } from 'next/router'
-
-import * as Fathom from 'fathom-client'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from "@vercel/speed-insights/next"
 // used for rendering equations (optional)
 import 'katex/dist/katex.min.css'
 // used for code syntax highlighting (optional)
@@ -21,7 +14,13 @@ import 'styles/notion.css'
 // global style overrides for prism theme (optional)
 import 'styles/prism-theme.css'
 
+import type { AppProps } from 'next/app'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import * as Fathom from 'fathom-client'
+import { useRouter } from 'next/router'
 import posthog from 'posthog-js'
+import * as React from 'react'
 
 import { bootstrap } from '@/lib/bootstrap-client'
 import {

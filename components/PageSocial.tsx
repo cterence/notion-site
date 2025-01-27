@@ -1,7 +1,6 @@
 import type * as React from 'react'
 import { FaGitlab } from '@react-icons/all-files/fa/FaGitlab'
 import { MdEmail } from '@react-icons/all-files/md/MdEmail'
-
 import cs from 'classnames'
 
 import * as config from '@/lib/config'
